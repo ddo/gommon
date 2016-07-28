@@ -60,7 +60,7 @@ func (*Bytes) Format(b int64) string {
 		multiple = "PB"
 	}
 
-	return fmt.Sprintf("%.02f%s", value, multiple)
+	return fmt.Sprintf("%.02f %s", value, multiple)
 }
 
 // Parse parses human readable bytes string to bytes integer.
